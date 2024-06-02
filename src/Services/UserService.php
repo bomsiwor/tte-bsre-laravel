@@ -1,6 +1,6 @@
 <?php
 
-namespace Bomsiwor\Services\TteBsre;
+namespace Bomsiwor\TteBsre\Services;
 
 class UserService
 {

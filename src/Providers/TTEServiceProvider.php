@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Bomsiwor\TTEBsre\Providers;
 
-use Bomsiwor\Services\TteBsre\UserService;
 use Bomsiwor\TteBsre\Console\InstallTTEPackage;
+use Bomsiwor\TteBsre\Services\UserService;
 use Illuminate\Support\ServiceProvider;
 
 final class TTEServiceProvider extends ServiceProvider
