@@ -30,7 +30,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Bomsiwor\\TteBsre"
+        "Bomsiwor\\TteBsre\\Providers\\TTEServiceProvider"
       ],
       "aliases": {
         "UserService": "Bomsiwor\\TteBsre\\Facades\\UserService"
