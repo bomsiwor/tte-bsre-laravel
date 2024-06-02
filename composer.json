@@ -1,6 +1,6 @@
 {
   "name": "bomsiwor/tte-bsre-laravel",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Pustaka untuk mengintegrasikan aplikasi Laravel dengan API TTE milik BSRe",
   "type": "library",
   "license": "MIT",
