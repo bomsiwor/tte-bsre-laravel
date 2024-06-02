@@ -1,0 +1,39 @@
+{
+  "name": "bomsiwor/tte-bsre-laravel",
+  "description": "Pustaka untuk mengintegrasikan aplikasi Laravel dengan API TTE milik BSRe",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Bomsiwor\\TteBsre\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "bomsiwor",
+      "email": "bomsiwor@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.8",
+    "illuminate/support": "^11.9"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bomsiwor\\TteBsre"
+      ],
+      "aliases": {
+        "UserService": "Bomsiwor\\TteBsre\\Facades\\UserService"
+      }
+    }
+  }
+}
