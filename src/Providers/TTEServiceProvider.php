@@ -16,14 +16,14 @@ final class TTEServiceProvider extends ServiceProvider
       return new UserService;
     });
 
-    $this->mergeConfigFrom(__DIR__ . '../config/config.php', 'tteBsre');
+    $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'tteBsre');
   }
 
   public function boot(): void
   {
     if ($this->app->runningInConsole()) {
       $this->publishes([
-        __DIR__ . '../config/config.php' => config_path("tteBsre.php")
+        __DIR__ . '/../config/config.php' => config_path("tteBsre.php")
       ], "config");
 
       $this->commands([
