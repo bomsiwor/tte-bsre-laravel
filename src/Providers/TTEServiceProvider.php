@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bomsiwor\TTEBsre\Providers;
 
 use Bomsiwor\Services\TteBsre\UserService;
+use Bomsiwor\TteBsre\Console\InstallTTEPackage;
 use Illuminate\Support\ServiceProvider;
 
 final class TTEServiceProvider extends ServiceProvider
@@ -24,6 +25,10 @@ final class TTEServiceProvider extends ServiceProvider
       $this->publishes([
         __DIR__ . '../config/config.php' => config_path("tteBsre.php")
       ], "config");
+
+      $this->commands([
+        InstallTTEPackage::class
+      ]);
     }
   }
 }
